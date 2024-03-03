@@ -91,60 +91,64 @@ class _ShowWidgetsUiState extends State<ShowWidgetsUi> {
             return Scaffold(
                 body: SafeArea(
               child: Center(
-                child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "Assignment App",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      width: 250,
-                      height: 500,
-                      decoration: BoxDecoration(
-                        color: Colors.green.shade300,
+                child: SingleChildScrollView(
+                  child: Column(
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 20,
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            showWidgets(_textFieldController, true, false),
-                            Text(
-                              textAlign: TextAlign.center,
-                              "Please add button Widget",
-                              style: TextStyle(fontSize: 22),
+                      Text(
+                        "Assignment App",
+                        style:
+                            TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 250,
+                        height: 500,
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade300,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                showWidgets(_textFieldController, true, false),
+                                Text(
+                                  textAlign: TextAlign.center,
+                                  "Please add button Widget",
+                                  style: TextStyle(fontSize: 22),
+                                ),
+                              ],
                             ),
-                          ],
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStatePropertyAll(Colors.green.shade300),
-                            foregroundColor:
-                                MaterialStatePropertyAll(Colors.black)),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => ButtonsUi(
-                                    showWidgetsBloc: widget.showWidgetsBloc),
-                              ));
-                        },
-                        child: Text("Add Widgets"))
-                  ],
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(Colors.green.shade300),
+                              foregroundColor:
+                                  MaterialStatePropertyAll(Colors.black)),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ButtonsUi(
+                                      showWidgetsBloc: widget.showWidgetsBloc),
+                                ));
+                          },
+                          child: Text("Add Widgets"))
+                    ],
+                  ),
                 ),
               ),
             ));
@@ -215,60 +219,62 @@ class _ShowWidgetsUiState extends State<ShowWidgetsUi> {
             return Scaffold(
                 body: SafeArea(
               child: Center(
-                child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "Assignment App",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      width: 250,
-                      height: 500,
-                      decoration: BoxDecoration(
-                        color: Colors.green.shade300,
+                child: SingleChildScrollView(
+                  child: Column(
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 20,
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            showWidgets(_textFieldController, false, false),
-                            Text(
-                              textAlign: TextAlign.center,
-                              "Please add button Widget",
-                              style: TextStyle(fontSize: 22),
-                            ),
-                          ],
+                      Text(
+                        "Assignment App",
+                        style:
+                            TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 250,
+                        height: 500,
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade300,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              showWidgets(_textFieldController, false, false),
+                              Text(
+                                textAlign: TextAlign.center,
+                                "Please add button Widget",
+                                style: TextStyle(fontSize: 22),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStatePropertyAll(Colors.green.shade300),
-                            foregroundColor:
-                                MaterialStatePropertyAll(Colors.black)),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => ButtonsUi(
-                                    showWidgetsBloc: widget.showWidgetsBloc),
-                              ));
-                        },
-                        child: Text("Add Widgets"))
-                  ],
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(Colors.green.shade300),
+                              foregroundColor:
+                                  MaterialStatePropertyAll(Colors.black)),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ButtonsUi(
+                                      showWidgetsBloc: widget.showWidgetsBloc),
+                                ));
+                          },
+                          child: Text("Add Widgets"))
+                    ],
+                  ),
                 ),
               ),
             ));
@@ -355,70 +361,74 @@ class _ShowWidgetsUiState extends State<ShowWidgetsUi> {
             return Scaffold(
                 body: SafeArea(
               child: Center(
-                child: Column(
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      "Assignment App",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Container(
-                      width: 250,
-                      height: 500,
-                      decoration: BoxDecoration(
-                        color: Colors.green.shade300,
+                child: SingleChildScrollView(
+                  child: Column(
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        height: 20,
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            showWidgets(_textFieldController, true, false),
-                            Align(
-                                alignment: Alignment.bottomCenter,
-                                child: ElevatedButton(
-                                    style: ButtonStyle(
-                                        backgroundColor:
-                                            MaterialStatePropertyAll(
-                                                Colors.green),
-                                        foregroundColor:
-                                            MaterialStatePropertyAll(
-                                                Colors.black)),
-                                    onPressed: () {
-                                      // saveTextToFirestore(_textFieldController.text.trim());
-                                      showSnack("Please add all the widgets");
-                                    },
-                                    child: Text("Save")))
-                          ],
+                      Text(
+                        "Assignment App",
+                        style:
+                            TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 250,
+                        height: 500,
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade300,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                showWidgets(_textFieldController, true, false),
+                                Align(
+                                    alignment: Alignment.bottomCenter,
+                                    child: ElevatedButton(
+                                        style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStatePropertyAll(
+                                                    Colors.green),
+                                            foregroundColor:
+                                                MaterialStatePropertyAll(
+                                                    Colors.black)),
+                                        onPressed: () {
+                                          // saveTextToFirestore(_textFieldController.text.trim());
+                                          showSnack("Please add all the widgets");
+                                        },
+                                        child: Text("Save")))
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                                MaterialStatePropertyAll(Colors.green.shade300),
-                            foregroundColor:
-                                MaterialStatePropertyAll(Colors.black)),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => ButtonsUi(
-                                    showWidgetsBloc: widget.showWidgetsBloc),
-                              ));
-                        },
-                        child: Text("Add Widgets"))
-                  ],
+                      SizedBox(
+                        height: 10,
+                      ),
+                      ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll(Colors.green.shade300),
+                              foregroundColor:
+                                  MaterialStatePropertyAll(Colors.black)),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ButtonsUi(
+                                      showWidgetsBloc: widget.showWidgetsBloc),
+                                ));
+                          },
+                          child: Text("Add Widgets"))
+                    ],
+                  ),
                 ),
               ),
             ));
