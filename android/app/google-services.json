@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "590591410897",
+    "project_id": "ubixstar-sarthak-sub",
+    "storage_bucket": "ubixstar-sarthak-sub.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590591410897:android:5eb62c2778010a3d193bf0",
+        "android_client_info": {
+          "package_name": "com.example.ubixstarassignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0rkd7lsMK2cJjPETUfFzfyLggKh9Y3mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
